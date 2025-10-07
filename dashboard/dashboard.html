@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Stick Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>Future Stick</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-link active">📊 Dashboard</a>
+            <a href="#" class="nav-link">📈 Analytics</a>
+            <a href="#" class="nav-link">📊 Projects</a>
+            <a href="#" class="nav-link">⚙️ Settings</a>
+            <a href="../landing-page/index.html" class="nav-link">🏠 Home</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Topbar -->
+        <header class="topbar">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="user-actions">
+                <button class="theme-toggle">🌙</button>
+                <button class="notifications">🔔</button>
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/40" alt="User">
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard-content">
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-info">
+                        <h3>Total Users</h3>
+                        <p class="stat-value">12,345</p>
+                        <span class="stat-change positive">+12.5%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">💰</div>
+                    <div class="stat-info">
+                        <h3>Revenue</h3>
+                        <p class="stat-value">$45,678</p>
+                        <span class="stat-change positive">+8.2%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📈</div>
+                    <div class="stat-info">
+                        <h3>Growth</h3>
+                        <p class="stat-value">32.5%</p>
+                        <span class="stat-change positive">+5.4%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-info">
+                        <h3>Satisfaction</h3>
+                        <p class="stat-value">98.2%</p>
+                        <span class="stat-change positive">+2.1%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="charts-section">
+                <div class="chart-card">
+                    <h3>Analytics Overview</h3>
+                    <div class="chart-placeholder" id="mainChart"></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Recent Activity</h3>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <span class="activity-icon">✅</span>
+                            <div class="activity-info">
+                                <p>New user registered</p>
+                                <span>2 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-icon">💵</span>
+                            <div class="activity-info">
+                                <p>Payment received</p>
+                                <span>15 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-icon">📦</span>
+                            <div class="activity-info">
+                                <p>New order placed</p>
+                                <span>1 hour ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Table -->
+            <div class="table-card">
+                <h3>Recent Projects</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Status</th>
+                            <th>Progress</th>
+                            <th>Due Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Website Redesign</td>
+                            <td><span class="status-badge in-progress">In Progress</span></td>
+                            <td><div class="progress-bar"><div class="progress" style="width: 75%"></div></div></td>
+                            <td>Dec 15, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Mobile App</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                            <td><div class="progress-bar"><div class="progress" style="width: 100%"></div></div></td>
+                            <td>Oct 1, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>API Integration</td>
+                            <td><span class="status-badge pending">Pending</span></td>
+                            <td><div class="progress-bar"><div class="progress" style="width: 25%"></div></div></td>
+                            <td>Jan 20, 2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
