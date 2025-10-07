@@ -1,0 +1,30 @@
+{
+  "name": "future-stick-dashboard",
+  "version": "1.0.0",
+  "description": "A futuristic landing page and personal dashboard project with modern UI/UX design",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server -p 8080",
+    "dev": "npx live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dashboard",
+    "landing-page",
+    "futuristic",
+    "modern-ui",
+    "analytics",
+    "visualization"
+  ],
+  "author": "bishalpokhrel1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bishalpokhrel1/future-stick-dashboard.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  }
+}
