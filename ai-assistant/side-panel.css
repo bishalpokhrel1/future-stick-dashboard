@@ -1,0 +1,18 @@
+/**
+ * AI Assistant Side Panel Styles
+ * Purpose: Styling for the AI assistant panel with contextual help UI
+ */
+
+#ai-side-panel {
+  /* Panel container styles */
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 350px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Add responsive and theme styling as needed */
